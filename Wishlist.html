@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist Page</title>
+    <link rel="stylesheet" href="CSS_Design.css">
+    <script src="Javascript_Design.js"></script>
+</head>
+<body style="padding-top: 40px;">
+    <div style="text-align: center;">
+        <a href="Main_Menu.html"><input type="button" value="MAIN MENU" style="height: 50px; width: 175px;"></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="Genres.html"><input type="button" value="RECOMMENDATIONS" style="height: 50px; width: 175px;"></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="Wishlist.html"><input type="button" value="WISHLIST" style="height: 50px; width: 175px;"></a>
+        <br><br><br>
+    </div>
+    <fieldset>
+        <legend>&nbsp;WISHLIST&nbsp;</legend>
+        <p>Input an ID number and press the 'Validate ID' button to validate it.</p>
+        <p>(NOTE: the entered ID must be a whole number. If the entered ID is invalid, the textbox will turn red, otherwise it will turn green.)</p>
+        <p>After validating your ID, the 'OK' button will appear, which you can press to view the wishlist of the entered ID number.</p>
+        <form id="wishlistIDForm">
+            <label for="wishlistUserID" style="font-size: 25px; font-family: Arial; color: rgb(124, 85, 61); text-align: justify;">ENTER ID:</label>
+            <input type="text" name="wishlistID" id="wishlistUserID" placeholder="ID" style="height: 20px; width: 200px; font-size: 20px;">
+            <br><br><br>
+            <div style="text-align: center;">
+                <input type="button" id ="validateButton" value="VALIDATE ID" style="height: 50px; width: 175px;">
+            </div>
+        </form>
+        <div style="text-align: center;">
+            <br><br>
+            <a href="Main_Menu.html"><input type="button" value="BACK" style="height: 50px; width: 175px;"></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Wishlist_Result.html"><input type="submit" value="OK" id="okButton" style="height: 50px; width: 175px; opacity: 0%;"></a>
+        </div>
+        <br>
+    </fieldset>
+    
+</body>
+</html>
